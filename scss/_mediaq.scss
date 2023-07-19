@@ -1,0 +1,69 @@
+/*formulario rensponsive movil*/
+$vista: mobile;
+$fontsize: 70px;
+
+body{
+    @if $vista == desktop{
+        @media only screen and (min-width: 1024px){
+            h1: $fontsize;
+        }
+    }
+    @else if $vista == mobile {
+        @media (min-width:320px) and (max-width:768px){
+            /*index*/
+            main{
+                section .presentacion{
+                    font-size: $fontmediaq;
+                }
+                    & .fotos{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                    & .fotos img{
+                        @include width-height(330px, 330px)
+                    }
+                }
+            /*productos*/
+            .nombretkot{
+                font-size: $fontmediaq;
+            }
+            .nombres{
+                font-size: $fontmediaq;
+            }
+
+            /*acerca de nosotros*/
+            div{
+                & .quien-somos{
+                    font-size: $fontmediaq;
+                }
+            }
+            div{
+                .nosotros-pregunta{
+                    font-size: 30px;
+                }
+                .nosotros{
+                    font-size: 20px;
+                }
+  
+            }
+            /*contacto*/
+            .texto-contacto{
+                font-size: $fontmediaq;
+            }
+            form{
+                width: 90%;
+            }
+            /*carrito*/
+            section{
+                & .contenedor-masproductos{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+        }
+    }
+}
+
+
