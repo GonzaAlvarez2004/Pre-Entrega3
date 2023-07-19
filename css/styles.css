@@ -331,19 +331,23 @@ section .texto-mas-productos {
 }
 section .contenedor-masproductos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-left: 10px;
   margin-bottom: 100px;
 }
 /*MEDIA QUARIES*/
 /*formulario rensponsive movil*/
 @media (min-width: 320px) and (max-width: 768px) {
   body {
+    /*generales*/
     /*index*/
     /*productos*/
     /*acerca de nosotros*/
     /*contacto*/
-    /*carrito*/
+  }
+  body .logo {
+    width: 150px;
+    height: 150px;
   }
   body main section .presentacion {
     font-size: 30px;
@@ -354,8 +358,8 @@ section .contenedor-masproductos {
     flex-wrap: wrap;
   }
   body main .fotos img {
-    width: 330px;
-    height: 330px;
+    width: 250px;
+    height: 250px;
   }
   body .nombretkot {
     font-size: 30px;
@@ -377,10 +381,6 @@ section .contenedor-masproductos {
   }
   body form {
     width: 90%;
-  }
-  body section .contenedor-masproductos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 
