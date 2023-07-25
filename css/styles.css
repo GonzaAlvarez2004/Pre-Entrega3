@@ -339,14 +339,16 @@ section .contenedor-masproductos {
 }
 /*MEDIA QUARIES*/
 /*formulario rensponsive movil*/
+body {
+  /*contacto*/
+  /*CARRITO*/
+}
 @media (min-width: 320px) and (max-width: 768px) {
   body {
     /*generales*/
     /*index*/
     /*productos*/
     /*acerca de nosotros*/
-    /*contacto*/
-    /*CARRITO*/
   }
   body .logo {
     width: 150px;
@@ -383,33 +385,33 @@ section .contenedor-masproductos {
   body div .nosotros {
     font-size: 20px;
   }
-  body .texto-contacto {
-    font-size: 30px;
-  }
-  body form {
-    width: 90%;
-  }
-  body .contenedor-carrito {
-    margin-left: 0px;
-  }
-  body .contenedor-carrito .carrito-p2 {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  body .contenedor-carrito .carrito-img {
-    width: 90px;
-  }
-  body .contenedor-carrito .carrito-input {
-    width: 100%;
-    margin-right: 5px;
-  }
-  body .contenedor-carrito .carrito-boton {
-    width: 70%;
-    font-size: 15px;
-  }
-  body section div .card {
-    margin-bottom: 100px;
-  }
+}
+body .texto-contacto {
+  font-size: 30px;
+}
+body form {
+  width: 90%;
+}
+body .contenedor-carrito {
+  margin-left: 0px;
+}
+body .contenedor-carrito .carrito-p2 {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+body .contenedor-carrito .carrito-img {
+  width: 90px;
+}
+body .contenedor-carrito .carrito-input {
+  width: 100%;
+  margin-right: 5px;
+}
+body .contenedor-carrito .carrito-boton {
+  width: 70%;
+  font-size: 15px;
+}
+body section div .card {
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
