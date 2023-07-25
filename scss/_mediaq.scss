@@ -20,14 +20,16 @@ body{
                     font-size: $fontmediaq;
                 }
                     & .fotos{
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        justify-items: center;
                     }
                     & .fotos img{
-                        @include width-height(250px, 250px)
+                        @include width-height(200px, 200px);
+                        @include margin(100px, auto, auto, 100px);
                     }
-                }
+                    }
+                
             /*productos*/
             .nombretkot{
                 font-size: $fontmediaq;
@@ -49,7 +51,6 @@ body{
                 .nosotros{
                     font-size: 20px;
                 }
-  
             }
             /*contacto*/
             .texto-contacto{
@@ -58,8 +59,35 @@ body{
             form{
                 width: 90%;
             }
-        }
-    }
-}
 
+            /*CARRITO*/           
+            
+            .contenedor-carrito{
+                margin-left: 0px;
+                .carrito-p2{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+                .carrito-img{
+                    width: 90px;
+                }
+                .carrito-input{
+                    width: 100%;
+                    margin-right: 5px;
+                }
+                .carrito-boton{
+                    width: 70%;
+                    font-size: 15px;
+                }
+            }
+            section{
+                div{
+                    .card{
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+}
+}
 

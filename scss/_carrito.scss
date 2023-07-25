@@ -34,7 +34,7 @@ main{
         .carrito-img{
             grid-column: 2/3;
             justify-self: center;
-            max-width: 100%;
+            width: 100%;
         }
         .carrito-input{
             grid-column: 6/7;
@@ -73,12 +73,14 @@ main{
         .texto-mas-productos{
             @extend .center-flex;
             margin-bottom: 20px;
+            @include margin(70px, auto, auto, 70px)
         }
         .contenedor-masproductos{
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-            margin-left: 10px;
-            margin-bottom: 100px;
+            justify-items: center;
+            @include margin(10px, auto, 10px, 150px);
+
             :hover{
                 @extend .hover;
             }

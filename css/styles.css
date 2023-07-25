@@ -49,15 +49,7 @@ header .logo {
   height: 250px;
   margin-bottom: 20px;
 }
-header nav {
-  float: right;
-  margin-top: 100px;
-  margin-right: 10px;
-}
 header nav li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-left: 30px;
 }
 header nav li :hover {
@@ -97,10 +89,10 @@ main .fotos :hover {
   cursor: pointer;
 }
 main .fotos img {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-right: 0px;
   margin-left: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 100px;
   padding: 5px;
   width: 400px;
   height: 400px;
@@ -219,6 +211,9 @@ main div .iframe {
 main div.texto-contacto {
   text-align: center;
   font-size: 40px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 100px;
 }
 
@@ -291,7 +286,7 @@ main .textos-carritos {
 .contenedor-carrito .carrito-img {
   grid-column: 2/3;
   justify-self: center;
-  max-width: 100%;
+  width: 100%;
 }
 .contenedor-carrito .carrito-input {
   grid-column: 6/7;
@@ -328,12 +323,19 @@ main .textos-carritos {
 
 section .texto-mas-productos {
   margin-bottom: 20px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
 }
 section .contenedor-masproductos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  margin-top: 10px;
+  margin-right: auto;
   margin-left: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 /*MEDIA QUARIES*/
 /*formulario rensponsive movil*/
@@ -344,6 +346,7 @@ section .contenedor-masproductos {
     /*productos*/
     /*acerca de nosotros*/
     /*contacto*/
+    /*CARRITO*/
   }
   body .logo {
     width: 150px;
@@ -353,13 +356,17 @@ section .contenedor-masproductos {
     font-size: 30px;
   }
   body main .fotos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   body main .fotos img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
   }
   body .nombretkot {
     font-size: 30px;
@@ -381,6 +388,27 @@ section .contenedor-masproductos {
   }
   body form {
     width: 90%;
+  }
+  body .contenedor-carrito {
+    margin-left: 0px;
+  }
+  body .contenedor-carrito .carrito-p2 {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  body .contenedor-carrito .carrito-img {
+    width: 90px;
+  }
+  body .contenedor-carrito .carrito-input {
+    width: 100%;
+    margin-right: 5px;
+  }
+  body .contenedor-carrito .carrito-boton {
+    width: 70%;
+    font-size: 15px;
+  }
+  body section div .card {
+    margin-bottom: 100px;
   }
 }
 
