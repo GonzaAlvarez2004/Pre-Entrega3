@@ -401,7 +401,7 @@ section .contenedor-masproductos {
     font-size: 30px;
   }
   body form {
-    width: 80%;
+    width: 0%;
   }
   body .contenedor-carrito {
     margin-left: 0px;
