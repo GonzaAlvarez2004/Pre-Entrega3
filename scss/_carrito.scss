@@ -34,7 +34,7 @@ main{
         .carrito-img{
             grid-column: 2/3;
             justify-self: center;
-            width: 100%;
+            max-width: 100%;
         }
         .carrito-input{
             grid-column: 6/7;
@@ -44,9 +44,11 @@ main{
         }
         .carrito-p4{
             margin: 0;
+            justify-self: center
         }
         .carrito-total{
             grid-column: 7/8;
+            justify-self: center;
         }
         .carrito-p{
             grid-column: 4/6;
@@ -57,14 +59,13 @@ main{
             width: 80%;
             min-width: min-content;
             border-radius: 10px;
-            background-color: black;
-            color: white;
+            color: rgb(0, 0, 0);
             padding: 10px 16px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 30px;
-            box-shadow: inset 2px 2px 5px orangered;
+            font-size: $fontmediaq;
+            box-shadow: inset 2px 2px 5px rgb(248, 79, 79);
             grid-column: 6/8;
             justify-self: right;
         }
@@ -86,3 +87,4 @@ main{
             }
         }
     }
+    

@@ -39,6 +39,15 @@ body {
   background-size: cover;
 }
 
+/*MAPS*/
+#boton-carrito {
+  background: #d86201;
+}
+
+#botonform {
+  background: #bdbdbd;
+}
+
 /*Header*/
 header {
   display: flex;
@@ -63,7 +72,7 @@ header nav li ul img {
 
 /*FOOTER*/
 footer {
-  background-color: rgb(223, 102, 21);
+  background-color: #E57C23;
 }
 footer img {
   width: 100px;
@@ -114,11 +123,12 @@ main .nombres {
   padding: 5px;
   border: 2px solid black;
   border-color: rgb(7, 5, 5);
-  background: linear-gradient(to right, rgb(241, 48, 0), rgb(221, 161, 161));
+  background: linear-gradient(to right, rgb(241, 48, 0), rgb(230, 121, 121));
 }
 main .productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
 }
 main .productos .producto {
   max-width: 300px;
@@ -132,7 +142,7 @@ main .productos .producto {
   text-align: center;
 }
 main .productos .producto img {
-  width: 100%; /*USAR VARIABLE FULL-WIDTH*/
+  width: 100%;
   object-fit: cover;
 }
 main .productos .producto h3 {
@@ -210,7 +220,7 @@ main div .iframe {
 /*formulario*/
 main div.texto-contacto {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -218,11 +228,12 @@ main div.texto-contacto {
 }
 
 section form {
+  align-items: center;
   width: 450px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   background: rgba(255, 255, 255, 0.3);
   padding: 10px 20px;
   box-sizing: border-box;
@@ -230,11 +241,10 @@ section form {
 }
 section form input, section form textarea {
   width: 100%;
-  height: auto;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 17px;
   border: none;
 }
 section form textarea {
@@ -243,7 +253,7 @@ section form textarea {
   min-width: 100%;
 }
 section form input.boton {
-  background: linear-gradient(to right, rgb(241, 48, 0), rgb(221, 161, 161));
+  /*background: $colorboton;*/
   color: black;
   padding: 20px;
 }
@@ -286,7 +296,7 @@ main .textos-carritos {
 .contenedor-carrito .carrito-img {
   grid-column: 2/3;
   justify-self: center;
-  width: 100%;
+  max-width: 100%;
 }
 .contenedor-carrito .carrito-input {
   grid-column: 6/7;
@@ -296,9 +306,11 @@ main .textos-carritos {
 }
 .contenedor-carrito .carrito-p4 {
   margin: 0;
+  justify-self: center;
 }
 .contenedor-carrito .carrito-total {
   grid-column: 7/8;
+  justify-self: center;
 }
 .contenedor-carrito .carrito-p {
   grid-column: 4/6;
@@ -309,14 +321,13 @@ main .textos-carritos {
   width: 80%;
   min-width: min-content;
   border-radius: 10px;
-  background-color: black;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-  box-shadow: inset 2px 2px 5px orangered;
+  box-shadow: inset 2px 2px 5px rgb(248, 79, 79);
   grid-column: 6/8;
   justify-self: right;
 }
@@ -339,16 +350,14 @@ section .contenedor-masproductos {
 }
 /*MEDIA QUARIES*/
 /*formulario rensponsive movil*/
-body {
-  /*contacto*/
-  /*CARRITO*/
-}
 @media (min-width: 320px) and (max-width: 768px) {
   body {
     /*generales*/
     /*index*/
     /*productos*/
     /*acerca de nosotros*/
+    /*contacto*/
+    /*CARRITO*/
   }
   body .logo {
     width: 150px;
@@ -370,6 +379,9 @@ body {
     margin-left: auto;
     margin-bottom: 100px;
   }
+  body .producto {
+    width: 65%;
+  }
   body .nombretkot {
     font-size: 30px;
   }
@@ -385,33 +397,31 @@ body {
   body div .nosotros {
     font-size: 20px;
   }
-}
-body .texto-contacto {
-  font-size: 30px;
-}
-body form {
-  width: 90%;
-}
-body .contenedor-carrito {
-  margin-left: 0px;
-}
-body .contenedor-carrito .carrito-p2 {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-body .contenedor-carrito .carrito-img {
-  width: 90px;
-}
-body .contenedor-carrito .carrito-input {
-  width: 100%;
-  margin-right: 5px;
-}
-body .contenedor-carrito .carrito-boton {
-  width: 70%;
-  font-size: 15px;
-}
-body section div .card {
-  margin-bottom: 100px;
+  body .texto-contacto {
+    font-size: 30px;
+  }
+  body .contenedor-carrito {
+    margin-left: 0px;
+  }
+  body .contenedor-carrito .carrito-p2 {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  body .contenedor-carrito .carrito-input {
+    width: 100%;
+    margin-right: 5px;
+  }
+  body .contenedor-carrito .carrito-p {
+    grid-column: 3/8;
+    font-size: 12px;
+  }
+  body .contenedor-carrito .carrito-boton {
+    width: 70%;
+    font-size: 15px;
+  }
+  body section div .card {
+    margin-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

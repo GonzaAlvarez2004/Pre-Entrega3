@@ -51,53 +51,57 @@
                 <h1 class="carrito-h1">Carrito de Compras</h1>
             </div>
             <!-- Contenedor de carrito-->
-            <div class="contenedor-carrito">
-                <p class="carrito-p1">Producto</p>
-                <p class="carrito-p2">Cantidad</p>
-                <p class="carrito-p3">Total</p>
+            <div class="container">
+                <div class="contenedor-carrito row">
+                    <p class="carrito-p1">Producto</p>
+                    <p class="carrito-p2">Cantidad</p>
+                    <p class="carrito-p3">Total</p>
+                </div>
+            <!--parte del medio del contenedor-->
+                <div class="contenedor-carrito">
+                    <img class="carrito-img" src="../img/tk-10-min.jpg" alt="tk-a10">
+                    <div class="carrito-p2-container">
+                        <p class="carrito-p2">Auriculares TKOT T-a10</p>
+                        <p class="carrito-p2">$5.000</p>
+                    </div>
+                    <input class="carrito-input" type="number">
+                    <p class="carrito-p4">$5.000</p>
+                </div>
+                <!--ultima parte del contenedor-->
+                <div class="contenedor-carrito row">
+                    <h3 class="carrito-total">TOTAL: $5.000</h3>
+                    <p class="carrito-p">Gastos de envio calculados al finalizar la compra</p>
+                    <input id="boton-carrito" class="carrito-boton" type="submit" value="FINALIZAR COMPRA"> 
+                </div>
             </div>
-        <div class="contenedor-carrito">
-            <img class="carrito-img" src="../img/tk-10-min.jpg" alt="tk-a10">
-        <div class="carrito-p2-container">
-            <p class="carrito-p2">Auriculares TKOT T-a10</p>
-            <p class="carrito-p2">$5.000</p>
-        </div>
-            <input class="carrito-input" type="number">
-            <p class="carrito-p4">$5.000</p>
-        </div>
-        <div class="contenedor-carrito">
-            <h3 class="carrito-total">TOTAL: $5.000</h3>
-            <p class="carrito-p">Gastos de envio calculados al finalizar la compra</p>
-            <input class="carrito-boton" type="submit" value="FINALIZAR COMPRA"> 
-        </div>
         <!--seccion de mas productos-->
         <section>
             <div class="texto-mas-productos">
                 <h2 class="mas-productos">Mas Productos</h2>
             </div>
             <div class="contenedor-masproductos">
-                <div class="card" style="width: 18rem;">
+                <div class="card bg-transparent border-black " style="width: 18rem;">
                     <img src="../img/tk-m01-min.png" class="card-img-top" alt="mouse tkot m-01">
                     <div class="card-body">
                         <h5 class="card-title">MOUSE TKOT M-01</h5>
                         <p class="card-text">$2.000</p>
-                        <a href="../pages/carrito.html" class="btn btn-danger">COMPRAR</a>
+                        <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
                     </div>
                 </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-transparent border-black" style="width: 18rem;">
                         <img src="../img/tk t500-min.jpeg" class="card-img-top" alt="teclado tkot t500">
                         <div class="card-body">
                             <h5 class="card-title">TECLADO TKOT T-500</h5>
                             <p class="card-text">$7.990</p>
-                            <a href="../pages/carrito.html" class="btn btn-danger">COMPRAR</a>
+                            <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-transparent border-black" style="width: 18rem;">
                         <img src="../img/tk-a30-min.jpg" class="card-img-top" alt="Auricular tkot tk-a30">
                     <div class="card-body">
                         <h5 class="card-title">AURICULAR TKOT A-30</h5>
                         <p class="card-text">$5.000</p>
-                        <a href="../pages/carrito.html" class="btn btn-danger">COMPRAR</a>
+                        <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
                     </div>
             </div>
         </section>

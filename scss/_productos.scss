@@ -17,6 +17,7 @@ main{
     .productos{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        justify-items: center;
         :hover{
             @extend .hover;
         }
@@ -28,7 +29,7 @@ main{
             overflow: hidden;
             text-align: center;
             img{
-                width: 100%; /*USAR VARIABLE FULL-WIDTH*/
+                width: 100%;
                 @extend .center-flex;
                 object-fit: cover;
             }

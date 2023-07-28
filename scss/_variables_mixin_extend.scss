@@ -1,7 +1,7 @@
 /*VARIABLES*/
-$background-color:rgb(223, 102, 21);
-$colorboton: linear-gradient(to right, rgb(241, 48, 0), rgb(221, 161, 161));
-$colornavidad:rgb(96, 160, 107);
+$background-color: #E57C23;
+$colorboton: linear-gradient(to right, rgb(241, 48, 0), rgb(230, 121, 121));
+$colornavidad: #85A389;
 $fontmediaq: 30px;
 
 /*MIXIN*/
@@ -88,3 +88,16 @@ $fondo: tkot;
 }
 
 
+/*MAPS*/
+$color-boton: (
+    boton-carrito: #d86201,
+    boton-formulario:#bdbdbd
+);
+
+#boton-carrito{
+    background: map-get($map: $color-boton, $key:boton-carrito );
+}
+
+#botonform{
+    background: map-get($map: $color-boton, $key:boton-formulario );
+}

@@ -16,7 +16,7 @@ main{
         .nosotros-pregunta{
             @include margin(150px, 50px, 50px, 10px);
             text-align: center;
-            font-size: 30px;
+            font-size: $fontmediaq;
             border: 2px solid rgb(189, 67, 67);
             border-radius: 150px;
             padding: 10px;

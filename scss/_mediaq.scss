@@ -4,7 +4,7 @@ $fontsize: 70px;
 
 body{
     @if $vista == desktop{
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 768px){
             h1: $fontsize;
         }
     }
@@ -31,13 +31,15 @@ body{
                     }
                 
             /*productos*/
+            .producto{
+                width: 65%;
+            }
             .nombretkot{
                 font-size: $fontmediaq;
             }
             .nombres{
                 font-size: $fontmediaq;
             }
-
             /*acerca de nosotros*/
             div{
                 & .quien-somos{
@@ -52,29 +54,24 @@ body{
                     font-size: 20px;
                 }
             }
-            }
             /*contacto*/
             .texto-contacto{
                 font-size: $fontmediaq;
             }
-            form{
-                width: 90%;
-            }
-
             /*CARRITO*/           
-            
             .contenedor-carrito{
                 margin-left: 0px;
                 .carrito-p2{
                     margin-right: 5px;
                     margin-left: 5px;
                 }
-                .carrito-img{
-                    width: 90px;
-                }
                 .carrito-input{
                     width: 100%;
                     margin-right: 5px;
+                }
+                .carrito-p{
+                    grid-column: 3/8;
+                    font-size: 12px;
                 }
                 .carrito-boton{
                     width: 70%;
@@ -89,6 +86,7 @@ body{
                 }
             }
         }
+    }
 }
 
 
