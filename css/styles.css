@@ -229,7 +229,7 @@ main div.texto-contacto {
 
 section form {
   align-items: center;
-  width: 450px;
+  width: 400px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -399,6 +399,9 @@ section .contenedor-masproductos {
   }
   body .texto-contacto {
     font-size: 30px;
+  }
+  body form {
+    width: 80%;
   }
   body .contenedor-carrito {
     margin-left: 0px;
